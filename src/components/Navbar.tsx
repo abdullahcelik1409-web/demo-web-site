@@ -3,19 +3,19 @@
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import gsap from "gsap"
-import { Menu, X, Car } from "lucide-react"
+import { Menu, X, CarFront } from "lucide-react"
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
     const navRef = useRef(null)
-    const menuRef = useRef(null)
 
     useEffect(() => {
         gsap.from(navRef.current, {
-            y: -100,
+            y: -20,
             opacity: 0,
-            duration: 1,
-            ease: "power4.out"
+            duration: 1.2,
+            ease: "power3.out",
+            delay: 0.2
         })
     }, [])
 
@@ -26,42 +26,50 @@ export default function Navbar() {
     return (
         <nav
             ref={navRef}
-            className="fixed top-0 left-0 w-full z-40 glass border-b border-white/5"
+            className="fixed top-0 left-0 w-full z-50 glass border-b border-white/5 transition-all duration-300"
         >
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-                <Link href="/" className="flex items-center gap-2 group">
-                    <Car className="text-primary w-8 h-8 group-hover:scale-110 transition-transform" />
-                    <span className="text-2xl font-bold tracking-tighter text-white">CAR<span className="text-primary">MEGA</span></span>
+                {/* Logo Area */}
+                <Link href="/" className="flex items-center gap-3 group">
+                    <CarFront className="text-white w-7 h-7 group-hover:text-accent transition-colors duration-500" />
+                    <span className="text-2xl font-bold tracking-widest text-white uppercase font-heading">
+                        CAR<span className="text-accent">MEGA</span>
+                    </span>
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center gap-8">
-                    <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">Ana Sayfa</Link>
-                    <Link href="/vehicles" className="text-sm font-medium hover:text-primary transition-colors">Araçlar</Link>
-                    <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">Hakkımızda</Link>
-                    <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">İletişim</Link>
-                    <Link href="/sell-car" className="px-6 py-2.5 bg-primary text-white text-sm font-semibold rounded-full hover:bg-primary/90 transition-all active:scale-95 shadow-lg shadow-primary/20">
+                <div className="hidden md:flex items-center gap-10">
+                    <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-300">Ana Sayfa</Link>
+                    <Link href="/vehicles" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-300">Araçlar</Link>
+                    <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-300">Hakkımızda</Link>
+                    <Link href="/contact" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-300">İletişim</Link>
+
+                    {/* Premium CTA Button */}
+                    <Link href="/sell-car"
+                        className="px-6 py-2.5 bg-white text-background text-sm font-semibold rounded-none hover:bg-accent transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
                         Aracınızı Satın
                     </Link>
                 </div>
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden text-white"
+                    className="md:hidden text-white focus:outline-none"
                     onClick={toggleMenu}
+                    aria-label="Toggle Menu"
                 >
-                    {isOpen ? <X size={28} /> : <Menu size={28} />}
+                    {isOpen ? <X size={28} className="text-accent" /> : <Menu size={28} />}
                 </button>
             </div>
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden glass border-t border-white/5 w-full flex flex-col p-6 gap-6 absolute top-20 left-0 animate-in slide-in-from-top duration-300">
-                    <Link href="/" onClick={toggleMenu} className="text-lg font-medium">Ana Sayfa</Link>
-                    <Link href="/vehicles" onClick={toggleMenu} className="text-lg font-medium">Araçlar</Link>
-                    <Link href="/about" onClick={toggleMenu} className="text-lg font-medium">Hakkımızda</Link>
-                    <Link href="/contact" onClick={toggleMenu} className="text-lg font-medium">İletişim</Link>
-                    <Link href="/sell-car" onClick={toggleMenu} className="w-full py-4 bg-primary text-white text-center rounded-xl font-bold">
+                <div className="md:hidden glass border-t border-white/5 w-full flex flex-col p-8 gap-6 absolute top-20 left-0 animate-in slide-in-from-top-4 fade-in duration-300 origin-top">
+                    <Link href="/" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">Ana Sayfa</Link>
+                    <Link href="/vehicles" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">Araçlar</Link>
+                    <Link href="/about" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">Hakkımızda</Link>
+                    <Link href="/contact" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">İletişim</Link>
+                    <div className="h-px w-full bg-white/10 my-2" />
+                    <Link href="/sell-car" onClick={toggleMenu} className="w-full py-4 bg-white text-background text-center rounded-none font-bold uppercase tracking-wider hover:bg-accent transition-colors">
                         Aracınızı Satın
                     </Link>
                 </div>
