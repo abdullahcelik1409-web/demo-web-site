@@ -149,7 +149,6 @@ export const vehicles: Vehicle[] = [
         fuelType: 'Dizel',
         transmission: 'Otomatik',
         images: [
-            '/cars/audi-a6-2025/audi-a6-1.png',
             '/cars/audi-a6-2025/audi-a6-2.jpg',
             '/cars/audi-a6-2025/audi-a6-3.png',
             '/cars/audi-a6-2025/audi-a6-4.jpg',
