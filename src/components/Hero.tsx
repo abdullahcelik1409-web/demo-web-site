@@ -125,7 +125,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
-                className="absolute bottom-0 left-0 w-full z-20 border-t border-white/5 bg-background/40 backdrop-blur-xl"
+                className="absolute bottom-0 left-0 w-full z-20 border-t border-white/5 bg-background/60"
             >
                 <div className="max-w-7xl mx-auto px-6 py-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-x divide-white/5">

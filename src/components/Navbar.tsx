@@ -32,17 +32,17 @@ export default function Navbar() {
                 {/* Logo Area */}
                 <Link href="/" className="flex items-center gap-3 group">
                     <CarFront className="text-white w-7 h-7 group-hover:text-accent transition-colors duration-500" />
-                    <span className="text-2xl font-bold tracking-widest text-white uppercase font-heading">
-                        CAR<span className="text-accent">MEGA</span>
+                    <span className="text-2xl font-black tracking-[0.2em] text-white uppercase font-heading">
+                        CAR<span className="text-accent brightness-125">MEGA</span>
                     </span>
                 </Link>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-10">
-                    <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-300">Ana Sayfa</Link>
-                    <Link href="/vehicles" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-300">Araçlar</Link>
-                    <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-300">Hakkımızda</Link>
-                    <Link href="/contact" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-300">İletişim</Link>
+                    <Link href="/" className="text-sm font-semibold text-white/90 hover:text-accent transition-colors duration-300">Ana Sayfa</Link>
+                    <Link href="/vehicles" className="text-sm font-semibold text-white/90 hover:text-accent transition-colors duration-300">Araçlar</Link>
+                    <Link href="/about" className="text-sm font-semibold text-white/90 hover:text-accent transition-colors duration-300">Hakkımızda</Link>
+                    <Link href="/contact" className="text-sm font-semibold text-white/90 hover:text-accent transition-colors duration-300">İletişim</Link>
 
                     {/* Premium CTA Button */}
                     <Link href="/sell-car"
