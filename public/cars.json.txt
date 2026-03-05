@@ -38,9 +38,9 @@
       "transmission": "Otomatik",
       "images": [
         "/cars/audi-a6-2025/audi-a6-1.png",
-        "/cars/audi-a6-2025/audi-a6-2.png",
+        "/cars/audi-a6-2025/audi-a6-2.jpg",
         "/cars/audi-a6-2025/audi-a6-3.png",
-        "/cars/audi-a6-2025/audi-a6-4.png",
+        "/cars/audi-a6-2025/audi-a6-4.jpg",
         "/cars/audi-a6-2025/audi-a6-5.png"
       ],
       "description": "2025 Model Bayi Çıkışlı Audi A6 S Line 40 TDI. %20 KDV Avantajlı. Hatasız, Boyasız, Değişensiz. 19 inç Jant, Hayalet, Geri Görüş, S Line Koltuk, Vakum, Matrix Far, 4 Koltuk Isıtma ve daha fazlası.",
