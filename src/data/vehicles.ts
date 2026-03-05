@@ -5,7 +5,7 @@ export interface Vehicle {
     price: number;
     year: number;
     mileage: number;
-    fuelType: 'Benzin' | 'Dizel' | 'Hibrit' | 'Elektrik';
+    fuelType: 'Benzin' | 'Dizel' | 'Hibrit' | 'Elektrik' | 'Benzinli';
     transmission: 'Otomatik' | 'Manuel';
     images: string[];
     category: 'Premium' | 'Exclusive' | 'Sport' | 'Standart';
@@ -119,5 +119,24 @@ export const vehicles: Vehicle[] = [
         category: 'Standart',
         description: 'Yeni nesil tasarımıyla dikkat çeken Tucson. Geniş bagaj hacmi ve konforlu sürüş.',
         features: ['360 Derece Kamera', 'Elektrikli Bagaj Kapağı', 'Isıtmalı Direksiyon', 'Kör Nokta Uyarısı']
+    },
+    {
+        id: '7',
+        brand: 'Ford',
+        model: 'F-150',
+        price: 5700000,
+        year: 2023,
+        mileage: 12150,
+        fuelType: 'Benzinli',
+        transmission: 'Otomatik',
+        images: [
+            '/cars/f150-1.png',
+            '/cars/f150-2.png',
+            '/cars/f150-3.png',
+            '/cars/f150-4.png'
+        ],
+        category: 'Premium',
+        description: 'İkinci el araç hizmetlerinde her adımda güveni hissedin. Otokoç 2.El İstanbul Avrupa\'dan 2023 model Ford F-150 Benzinli Otomatik. 12.150 KM, 330 HP, 2688 cc motor, 4x4 çekiş. Sağ arka çamurluk boyalı, tramer kaydı yok. 3 Ay / 5.000 km garanti kapsamında. Yetki Belge No: 3400132.',
+        features: ['ABS', 'Arka Park Sensörü', '4x4 Çekiş Sistemi', '330 HP Motor Gücü', 'Otomatik Vites', 'Pickup Kasa', 'Garanti Kapsamında', 'Tramer Kaydı Yok']
     }
 ];

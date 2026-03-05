@@ -1,0 +1,27 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "slug": "2023-ford-f-150",
+      "title": "2023 Ford F-150 Benzinli Otomatik",
+      "brand": "Ford",
+      "model": "F-150",
+      "package": "4x4",
+      "year": 2023,
+      "price": 5700000,
+      "currency": "TRY",
+      "km": 12150,
+      "fuel": "Benzinli",
+      "transmission": "Otomatik",
+      "images": [
+        "/cars/f150-1.png",
+        "/cars/f150-2.png",
+        "/cars/f150-3.png",
+        "/cars/f150-4.png"
+      ],
+      "description": "İkinci el araç hizmetlerinde her adımda güveni hissedin. Otokoç 2.El İstanbul Avrupa'dan 2023 model Ford F-150 Benzinli Otomatik. 12.150 KM, 330 HP, 2688 cc motor, 4x4 çekiş. Sağ arka çamurluk boyalı, tramer kaydı yok. 3 Ay / 5.000 km garanti kapsamında. Yetki Belge No: 3400132.",
+      "featured": true,
+      "status": "active"
+    }
+  ]
+}
