@@ -96,23 +96,22 @@ export default function Hero() {
 
                     <motion.div
                         variants={fadeUpVariants} initial="hidden" animate="visible"
-                        className="flex flex-col sm:flex-row gap-6"
+                        className="flex flex-col sm:flex-row gap-4"
                     >
                         <Link
                             href="/vehicles"
-                            className="group relative flex items-center justify-center gap-2 bg-white text-background px-8 py-4 rounded-none font-bold uppercase tracking-wider overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]"
+                            className="group relative flex items-center justify-center gap-2 bg-accent text-background px-10 py-4 rounded-full font-bold uppercase tracking-wider overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] text-sm"
                         >
                             <span className="relative z-10 flex items-center gap-2">
                                 Koleksiyonu İncele
                                 <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
                             </span>
-                            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-0 bg-accent transition-transform duration-500 ease-out" />
                         </Link>
 
                         <Link
                             href="https://wa.me/905415180015"
                             target="_blank"
-                            className="group flex items-center justify-center gap-3 px-8 py-4 rounded-none border border-white/10 text-white font-medium hover:bg-white/5 transition-all duration-300 backdrop-blur-sm"
+                            className="group flex items-center justify-center gap-3 px-10 py-4 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm uppercase tracking-wider"
                         >
                             <MessageCircle size={18} className="text-accent group-hover:scale-110 transition-transform" />
                             <span>Özel Randevu Al</span>

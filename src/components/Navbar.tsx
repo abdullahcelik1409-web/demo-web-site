@@ -46,7 +46,7 @@ export default function Navbar() {
 
                     {/* Premium CTA Button */}
                     <Link href="/sell-car"
-                        className="px-6 py-2.5 bg-white text-background text-sm font-semibold rounded-none hover:bg-accent transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                        className="px-6 py-2.5 bg-accent text-background text-sm font-semibold rounded-full hover:bg-white hover:text-background transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]">
                         Aracınızı Satın
                     </Link>
                 </div>
@@ -63,13 +63,13 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden bg-background border-t border-white/5 w-full flex flex-col p-8 gap-6 absolute top-20 left-0 animate-in slide-in-from-top-4 fade-in duration-300 origin-top">
+                <div className="md:hidden bg-[#09090b] border-t border-white/5 w-full flex flex-col p-8 gap-6 absolute top-20 left-0 z-50 animate-in slide-in-from-top-4 fade-in duration-300 origin-top">
                     <Link href="/" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">Ana Sayfa</Link>
                     <Link href="/vehicles" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">Araçlar</Link>
                     <Link href="/about" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">Hakkımızda</Link>
                     <Link href="/contact" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">İletişim</Link>
                     <div className="h-px w-full bg-white/10 my-2" />
-                    <Link href="/sell-car" onClick={toggleMenu} className="w-full py-4 bg-white text-background text-center rounded-none font-bold uppercase tracking-wider hover:bg-accent transition-colors">
+                    <Link href="/sell-car" onClick={toggleMenu} className="w-full py-4 bg-accent text-background text-center rounded-full font-bold uppercase tracking-wider hover:bg-white transition-colors">
                         Aracınızı Satın
                     </Link>
                 </div>
