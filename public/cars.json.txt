@@ -22,6 +22,30 @@
       "description": "İkinci el araç hizmetlerinde her adımda güveni hissedin. Otokoç 2.El İstanbul Avrupa'dan 2023 model Ford F-150 Benzinli Otomatik. 12.150 KM, 330 HP, 2688 cc motor, 4x4 çekiş. Sağ arka çamurluk boyalı, tramer kaydı yok. 3 Ay / 5.000 km garanti kapsamında. Yetki Belge No: 3400132.",
       "featured": true,
       "status": "active"
+    },
+    {
+      "id": 2,
+      "slug": "2025-audi-a6",
+      "title": "2025 Audi A6 Sedan 40 TDI Quattro S Line",
+      "brand": "Audi",
+      "model": "A6",
+      "package": "S Line",
+      "year": 2025,
+      "price": 7450000,
+      "currency": "TRY",
+      "km": 6001,
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "images": [
+        "/cars/audi-a6-2025/audi-a6-1.png",
+        "/cars/audi-a6-2025/audi-a6-2.png",
+        "/cars/audi-a6-2025/audi-a6-3.png",
+        "/cars/audi-a6-2025/audi-a6-4.png",
+        "/cars/audi-a6-2025/audi-a6-5.png"
+      ],
+      "description": "2025 Model Bayi Çıkışlı Audi A6 S Line 40 TDI. %20 KDV Avantajlı. Hatasız, Boyasız, Değişensiz. 19 inç Jant, Hayalet, Geri Görüş, S Line Koltuk, Vakum, Matrix Far, 4 Koltuk Isıtma ve daha fazlası.",
+      "featured": true,
+      "status": "active"
     }
   ]
 }

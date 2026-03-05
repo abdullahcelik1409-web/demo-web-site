@@ -138,5 +138,44 @@ export const vehicles: Vehicle[] = [
         category: 'Premium',
         description: 'İkinci el araç hizmetlerinde her adımda güveni hissedin. Otokoç 2.El İstanbul Avrupa\'dan 2023 model Ford F-150 Benzinli Otomatik. 12.150 KM, 330 HP, 2688 cc motor, 4x4 çekiş. Sağ arka çamurluk boyalı, tramer kaydı yok. 3 Ay / 5.000 km garanti kapsamında. Yetki Belge No: 3400132.',
         features: ['ABS', 'Arka Park Sensörü', '4x4 Çekiş Sistemi', '330 HP Motor Gücü', 'Otomatik Vites', 'Pickup Kasa', 'Garanti Kapsamında', 'Tramer Kaydı Yok']
+    },
+    {
+        id: '8',
+        brand: 'Audi',
+        model: 'A6 Sedan 40 TDI Quattro S Line',
+        price: 7450000,
+        year: 2025,
+        mileage: 6001,
+        fuelType: 'Dizel',
+        transmission: 'Otomatik',
+        images: [
+            '/cars/audi-a6-2025/audi-a6-1.png',
+            '/cars/audi-a6-2025/audi-a6-2.png',
+            '/cars/audi-a6-2025/audi-a6-3.png',
+            '/cars/audi-a6-2025/audi-a6-4.png',
+            '/cars/audi-a6-2025/audi-a6-5.png'
+        ],
+        category: 'Premium',
+        description: '2025 Model Bayi Çıkışlı Audi A6 S Line 40 TDI. %20 KDV Avantajlı. Hatasız, Boyasız, Değişensiz.',
+        features: [
+            '19 İnç Jant',
+            'Hayalet Gösterge',
+            'Geri Görüş Kamerası',
+            'S Line Spor Koltuklar',
+            'Elektrikli Arka Perde',
+            'Makam Yan Perdeler',
+            'Vakum Kapılar',
+            'Matrix LED Farlar',
+            'Çarpışma Önleme Sistemi',
+            'Şerit Takip Asistanı',
+            'Elektrikli Ön Koltuklar',
+            '4 Koltuk Isıtma',
+            'Park Asistanı',
+            'Auto Hold',
+            'Elektrikli Bagaj',
+            'Panoramik Cam Tavan',
+            'Katlanır Aynalar',
+            '4 Bölge Dijital Klima'
+        ]
     }
 ];
