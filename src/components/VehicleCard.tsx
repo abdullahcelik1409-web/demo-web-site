@@ -14,7 +14,7 @@ export default function VehicleCard({ vehicle }: VehicleCardProps) {
             {/* Image Container with precise 16/10 aspect */}
             <div className="relative aspect-[16/10] overflow-hidden bg-zinc-900 w-full">
                 <img
-                    src={vehicle.image}
+                    src={vehicle.images[0]}
                     alt={`${vehicle.brand} ${vehicle.model}`}
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 ease-[cubic-bezier(0.25,1,0.5,1)]"
                 />

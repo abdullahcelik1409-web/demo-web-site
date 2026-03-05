@@ -72,7 +72,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-5xl md:text-7xl font-heading font-black mb-8 tracking-tighter text-white uppercase flex flex-col items-center gap-2">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-heading font-black mb-8 tracking-tighter text-white uppercase flex flex-col items-center gap-2">
               <span>Aracınızı</span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-amber-200 italic">Değerinde Satın</span>
             </h2>

@@ -11,7 +11,7 @@ export default function About() {
             {/* Page Header */}
             <section className="pt-40 pb-20 bg-gradient-to-b from-primary/10 to-transparent">
                 <div className="max-w-7xl mx-auto px-6 text-center">
-                    <h1 className="text-5xl md:text-7xl font-black mb-8 italic tracking-tighter uppercase">HAKKIMIZDA</h1>
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-black mb-8 italic tracking-tighter uppercase">HAKKIMIZDA</h1>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                         15 yılı aşkın tecrübemizle İstanbul'un kalbinde, premium araçlar ve üstün hizmet anlayışıyla otomotiv dünyasına değer katıyoruz.
                     </p>

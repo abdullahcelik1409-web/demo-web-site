@@ -7,8 +7,8 @@ export interface Vehicle {
     mileage: number;
     fuelType: 'Benzin' | 'Dizel' | 'Hibrit' | 'Elektrik';
     transmission: 'Otomatik' | 'Manuel';
-    image: string;
-    category: 'Premium' | 'Exclusive' | 'Sport';
+    images: string[];
+    category: 'Premium' | 'Exclusive' | 'Sport' | 'Standart';
     description: string;
     features: string[];
 }
@@ -16,58 +16,71 @@ export interface Vehicle {
 export const vehicles: Vehicle[] = [
     {
         id: '1',
-        brand: 'Mercedes-Benz',
-        model: 'G 63 AMG',
-        price: 12500000,
+        brand: 'Volkswagen',
+        model: 'Golf 1.5 eTSI',
+        price: 1850000,
         year: 2023,
-        mileage: 5000,
-        fuelType: 'Benzin',
+        mileage: 12000,
+        fuelType: 'Hibrit',
         transmission: 'Otomatik',
-        image: 'https://images.unsplash.com/photo-1520031441872-265e4ff70366?q=80&w=1000&auto=format&fit=crop',
-        category: 'Premium',
-        description: 'Kusursuz kondisyonda, full aksesuarlı G 63 AMG. Özel mat siyah renk.',
-        features: ['Vakumlu Kapılar', 'Isıtmalı Koltuklar', 'Burmester Ses Sistemi', '360 Derece Kamera']
+        images: [
+            'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1616885387195-a4f6be4e370e?auto=format&fit=crop&w=1000&q=80'
+        ],
+        category: 'Standart',
+        description: 'Düşük kilometrede, yetkili servis bakımlı, hatasız VW Golf 8. Şehir içi ve dışı ideal kullanım.',
+        features: ['Dijital Gösterge Paneli', 'Isıtmalı Koltuklar', 'Apple CarPlay / Android Auto', 'Geri Görüş Kamerası']
     },
     {
         id: '2',
-        brand: 'BMW',
-        model: 'M4 Competition',
-        price: 8500000,
-        year: 2024,
-        mileage: 1200,
-        fuelType: 'Benzin',
+        brand: 'Toyota',
+        model: 'Corolla 1.8 Hybrid',
+        price: 1550000,
+        year: 2022,
+        mileage: 28000,
+        fuelType: 'Hibrit',
         transmission: 'Otomatik',
-        image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1000&auto=format&fit=crop',
-        category: 'Sport',
-        description: 'Yeni nesil M4 Competition. Karbon fiber detaylar ve Competition paket.',
-        features: ['M Drift Analizörü', 'Karbon Seramik Frenler', 'Head-up Display', 'Adaptif M Şasi']
+        images: [
+            'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fd?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=1000&q=80'
+        ],
+        category: 'Standart',
+        description: 'Yakıt cimrisi ve sorunsuz hibrit motor. İlk sahibinden, kapalı garaj aracı.',
+        features: ['Adaptif Hız Sabitleyici', 'Şerit Takip Sistemi', 'Kablosuz Şarj', 'LED Farlar']
     },
     {
         id: '3',
-        brand: 'Audi',
-        model: 'RS7 Sportback',
-        price: 9200000,
+        brand: 'Renault',
+        model: 'Megane 1.3 TCe',
+        price: 1350000,
         year: 2023,
-        mileage: 8500,
+        mileage: 18500,
         fuelType: 'Benzin',
         transmission: 'Otomatik',
-        image: 'https://images.unsplash.com/photo-1606152424101-ad2f9a287bd6?q=80&w=1000&auto=format&fit=crop',
-        category: 'Exclusive',
-        description: 'Eşsiz tasarım ve üstün performans. RS7 Sportback ile sınırları zorlayın.',
-        features: ['Quattro Çekiş Sistemi', 'Lazer Farlar', 'RS Spor Koltuklar', 'Bang & Olufsen 3D Ses']
+        images: [
+            'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1622353347526-2580556e43f5?auto=format&fit=crop&w=1000&q=80'
+        ],
+        category: 'Standart',
+        description: 'Geniş iç hacmi ve konforuyla ideal aile aracı. Hatasız, boyasız.',
+        features: ['Anahtarsız Giriş ve Çalıştırma', 'Dokunmatik Multimedya', 'Geri Görüş Kamerası', 'Alaşımlı Jantlar']
     },
     {
         id: '4',
-        brand: 'Porsche',
-        model: 'Cayenne Coupe',
-        price: 11000000,
-        year: 2024,
-        mileage: 500,
-        fuelType: 'Hibrit',
+        brand: 'Fiat',
+        model: 'Egea 1.6 Multijet',
+        price: 1100000,
+        year: 2021,
+        mileage: 45000,
+        fuelType: 'Dizel',
         transmission: 'Otomatik',
-        image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format&fit=crop',
-        category: 'Premium',
-        description: 'E-Hybrid teknolojisiyle hem güçlü hem verimli. Luxury paket opsiyonlu.',
-        features: ['Panoramik Tavan', 'Hava Süspansiyonu', 'Sport Chrono Paket', 'Bose Ses Sistemi']
+        images: [
+            'https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1000&q=80'
+        ],
+        category: 'Standart',
+        description: 'Ekonomik dizel motoruyla uzun yolların vazgeçilmezi. Temiz kullanılmış masrafsız sedan.',
+        features: ['Hız Sabitleyici', 'Yokuş Kalkış Desteği', 'Bluetooth Bağlantısı', 'Gündüz LED Farları']
     }
 ];

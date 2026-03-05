@@ -41,8 +41,8 @@ export default function VehicleList() {
 
             <section className="pt-40 pb-12 bg-gradient-to-b from-primary/5 to-transparent border-b border-white/5">
                 <div className="max-w-7xl mx-auto px-6 text-center">
-                    <h1 className="text-5xl md:text-7xl font-black mb-8 italic tracking-tighter uppercase leading-none">
-                        ARAÇ <span className="text-primary italic font-light">LISTESI</span>
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-black mb-8 italic tracking-tighter uppercase leading-none">
+                        ARAÇ <span className="text-primary italic font-light">LİSTESİ</span>
                     </h1>
                     <p className="text-muted-foreground max-w-2xl mx-auto uppercase tracking-[0.2em] text-sm">
                         Hayalinizdeki Premium Aracı Keşfedin

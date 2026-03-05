@@ -63,7 +63,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden glass border-t border-white/5 w-full flex flex-col p-8 gap-6 absolute top-20 left-0 animate-in slide-in-from-top-4 fade-in duration-300 origin-top">
+                <div className="md:hidden bg-background border-t border-white/5 w-full flex flex-col p-8 gap-6 absolute top-20 left-0 animate-in slide-in-from-top-4 fade-in duration-300 origin-top">
                     <Link href="/" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">Ana Sayfa</Link>
                     <Link href="/vehicles" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">Araçlar</Link>
                     <Link href="/about" onClick={toggleMenu} className="text-xl font-heading text-white hover:text-accent transition-colors">Hakkımızda</Link>

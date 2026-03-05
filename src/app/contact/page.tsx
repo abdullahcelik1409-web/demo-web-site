@@ -20,7 +20,7 @@ export default function Contact() {
                     <div className="grid lg:grid-cols-2 gap-20">
                         {/* Contact Info */}
                         <div>
-                            <h1 className="text-5xl md:text-7xl font-black mb-8 italic tracking-tighter uppercase">İLETİŞİM</h1>
+                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black mb-8 italic tracking-tighter uppercase">İLETİŞİM</h1>
                             <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
                                 Premium araçlarımız hakkında bilgi almak veya bir test sürüşü planlamak için bizimle iletişime geçin.
                             </p>
@@ -32,7 +32,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Bizi Arayın</h4>
-                                        <p className="text-2xl font-black group-hover:text-primary transition-colors">+90 541 518 00 15</p>
+                                        <p className="text-xl md:text-2xl font-black group-hover:text-primary transition-colors">+90 541 518 00 15</p>
                                     </div>
                                 </div>
 
@@ -42,7 +42,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">E-posta Gönderin</h4>
-                                        <p className="text-2xl font-black group-hover:text-primary transition-colors">info@carmega.com.tr</p>
+                                        <p className="text-lg md:text-2xl font-black group-hover:text-primary transition-colors break-all md:break-normal">info@carmega.com.tr</p>
                                     </div>
                                 </div>
 

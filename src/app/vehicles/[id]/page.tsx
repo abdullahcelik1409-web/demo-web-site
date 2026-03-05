@@ -1,17 +1,18 @@
 "use client"
 
-import { use } from "react"
+import { use, useState } from "react"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import { vehicles } from "@/data/vehicles"
-import { CheckCircle2, Fuel, Gauge, Settings, ShieldCheck, MapPin, MessageSquare } from "lucide-react"
+import { CheckCircle2, Fuel, Gauge, Settings, ShieldCheck, MapPin, MessageSquare, ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
 export default function VehicleDetail({ params }: { params: Promise<{ id: string }> }) {
     const { id } = use(params)
     const vehicle = vehicles.find(v => v.id === id)
+    const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
     if (!vehicle) {
         notFound()
@@ -31,17 +32,37 @@ export default function VehicleDetail({ params }: { params: Promise<{ id: string
                     <div className="grid lg:grid-cols-2 gap-16">
                         {/* Gallery Side */}
                         <div className="space-y-6">
-                            <div className="aspect-[16/10] rounded-[40px] overflow-hidden glass border border-white/10 group">
+                            <div className="relative aspect-[16/10] rounded-[40px] overflow-hidden glass border border-white/10 group">
                                 <img
-                                    src={vehicle.image}
+                                    src={vehicle.images[currentImageIndex]}
                                     alt={vehicle.brand}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
+                                {vehicle.images.length > 1 && (
+                                    <>
+                                        <button
+                                            onClick={() => setCurrentImageIndex((prev) => (prev === 0 ? vehicle.images.length - 1 : prev - 1))}
+                                            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/80 text-white rounded-full flex items-center justify-center backdrop-blur-md transition-all z-10"
+                                        >
+                                            <ChevronLeft size={24} />
+                                        </button>
+                                        <button
+                                            onClick={() => setCurrentImageIndex((prev) => (prev === vehicle.images.length - 1 ? 0 : prev + 1))}
+                                            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/80 text-white rounded-full flex items-center justify-center backdrop-blur-md transition-all z-10"
+                                        >
+                                            <ChevronRight size={24} />
+                                        </button>
+                                    </>
+                                )}
                             </div>
                             <div className="grid grid-cols-4 gap-4">
-                                {[1, 2, 3, 4].map(idx => (
-                                    <div key={idx} className="aspect-square rounded-2xl overflow-hidden glass border border-white/5 opacity-60 hover:opacity-100 cursor-pointer transition-all">
-                                        <img src={vehicle.image} alt="Thumbnail" className="w-full h-full object-cover" />
+                                {vehicle.images.map((img, idx) => (
+                                    <div
+                                        key={idx}
+                                        onClick={() => setCurrentImageIndex(idx)}
+                                        className={`aspect-square rounded-2xl overflow-hidden glass border ${currentImageIndex === idx ? 'border-primary opacity-100' : 'border-white/5 opacity-50 hover:opacity-100'} cursor-pointer transition-all`}
+                                    >
+                                        <img src={img} alt="Thumbnail" className="w-full h-full object-cover" />
                                     </div>
                                 ))}
                             </div>
@@ -58,19 +79,19 @@ export default function VehicleDetail({ params }: { params: Promise<{ id: string
                                 </div>
                             </div>
 
-                            <h1 className="text-5xl md:text-7xl font-black italic tracking-tighter uppercase mb-2 leading-none">
+                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black italic tracking-tighter uppercase mb-2 leading-tight">
                                 {vehicle.brand}
                             </h1>
-                            <h2 className="text-3xl font-light text-muted-foreground mb-8">
+                            <h2 className="text-2xl md:text-3xl font-light text-muted-foreground mb-8">
                                 {vehicle.model} <span className="text-white">| {vehicle.year}</span>
                             </h2>
 
-                            <div className="text-4xl font-black text-primary italic mb-12">
+                            <div className="text-3xl md:text-4xl font-black text-primary italic mb-12">
                                 ₺{vehicle.price.toLocaleString('tr-TR')}
                             </div>
 
                             {/* Quick Specs */}
-                            <div className="grid grid-cols-2 gap-6 mb-12">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
                                 <div className="glass p-5 rounded-2xl flex items-center gap-4">
                                     <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-primary"><Gauge size={24} /></div>
                                     <div>

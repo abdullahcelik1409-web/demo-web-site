@@ -23,8 +23,8 @@ export default function SellCar() {
                             <span className="px-4 py-1.5 bg-primary/10 border border-primary/20 text-primary text-xs font-black rounded-full uppercase tracking-widest mb-6 inline-block">
                                 Hızlı & Güvenli Süreç
                             </span>
-                            <h1 className="text-5xl md:text-7xl font-black mb-10 italic tracking-tighter uppercase leading-[0.9]">
-                                ARACINIZI <br /> <span className="text-primary">DEĞERINDE</span> <br /> SATIN
+                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black mb-10 italic tracking-tighter uppercase leading-[0.9]">
+                                ARACINIZI <br /> <span className="text-primary">DEĞERİNDE</span> <br /> SATIN
                             </h1>
                             <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
                                 CARMEGA profesyonelliği ile aracınızı nakite çevirin. Formu doldurun, aracınız için en yüksek piyasa değerini hesaplayalım.
