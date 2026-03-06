@@ -129,8 +129,7 @@ export const vehicles: Vehicle[] = [
             '/cars/bmw-520d/bmw-520d-8.png',
             '/cars/bmw-520d/bmw-520d-9.png',
             '/cars/bmw-520d/bmw-520d-10.png',
-            '/cars/bmw-520d/bmw-520d-11.png',
-            '/cars/bmw-520d/bmw-520d-12.png'
+            '/cars/bmw-520d/bmw-520d-11.png'
         ],
         category: 'Premium',
         description: 'Aracım M Sport paket olup kozmetik ve mekanik olarak diri durumdadır. Motor–şanzıman kusursuz çalışmaktadır, yürüyeninde herhangi bir sorun yoktur. Şase podye airbag direklerde herhangi bi işlem yoktur. ORJİNAL M SPORT, NEXT 100, 4 KAPI VAKUM, ANTRASİT, HAYALET EKRAN. 2.0 B47 DİZEL oldukça sorunsuz ve az yakan bir motordur.',
