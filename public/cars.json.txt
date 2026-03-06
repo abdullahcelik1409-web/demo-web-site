@@ -93,7 +93,8 @@
         "/cars/bmw-520d/bmw-520d-8.png",
         "/cars/bmw-520d/bmw-520d-9.png",
         "/cars/bmw-520d/bmw-520d-10.png",
-        "/cars/bmw-520d/bmw-520d-11.png"
+        "/cars/bmw-520d/bmw-520d-11.png",
+        "/cars/bmw-520d/bmw-520d-12.png"
       ],
       "description": "Aracım M Sport paket olup kozmetik ve mekanik olarak diri durumdadır. Motor–şanzıman kusursuz çalışmaktadır, yürüyeninde herhangi bir sorun yoktur. Şase podye airbag direklerde herhangi bi işlem yoktur. ORJİNAL M SPORT, NEXT 100, 4 KAPI VAKUM, ANTRASİT, HAYALET EKRAN. 2.0 B47 DİZEL oldukça sorunsuz ve az yakan bir motordur. Sürtmeden kaynaklı çok ufak lokal boya vardır resimleri mevcut. 130bin tramer yeni tarihli 2025 Aralık ayı. Bakımları düzenli yapılmıştır, masrafsızdır. İç–dış kozmetiği yaşı ve kilometresine göre çok iyidir. Alıcısına şimdiden hayırlı olsun. Plaka verilmeyecektir. Ev arsa takası kabul etmiyorum. Takas Tercihim A5 45TFSI, E300, G20, G22, Benzinli G30.",
       "featured": true,
