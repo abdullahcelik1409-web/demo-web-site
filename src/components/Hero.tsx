@@ -65,7 +65,7 @@ export default function Hero() {
             </motion.div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center">
-                <div className="max-w-2xl pt-10">
+                <div className="max-w-2xl pt-10 pb-32 md:pb-0">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -100,7 +100,7 @@ export default function Hero() {
                     >
                         <Link
                             href="/vehicles"
-                            className="group relative flex items-center justify-center gap-2 bg-accent text-background px-10 py-4 rounded-full font-bold uppercase tracking-wider overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] text-sm"
+                            className="group relative flex items-center justify-center gap-2 bg-accent text-background px-10 py-4 rounded-full font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] text-sm"
                         >
                             <span className="relative z-10 flex items-center gap-2">
                                 Koleksiyonu İncele
