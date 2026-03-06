@@ -84,8 +84,7 @@ export const vehicles: Vehicle[] = [
             '/cars/mercedes-e250-1.jpg',
             '/cars/mercedes-e250-2.jpg',
             '/cars/mercedes-e250-3.jpg',
-            '/cars/mercedes-e250-4.jpg',
-            '/cars/mercedes-e250-5.png'
+            '/cars/mercedes-e250-4.jpg'
         ],
         category: 'Premium',
         description: 'VİZYON OTOMOTİV güvencesiyle 2015 Model Mercedes-Benz E 250 CDI Edition. Bayi çıkışlı, hatasız ve boyasız. Sadece 4.000 TL tramer kaydı mevcuttur. İç kozmetiği ilk günkü temizliğini korumaktadır. Bakımlı ve masrafsız bir araçtır. Yedek anahtarları ve kitapçıkları mevcuttur.',

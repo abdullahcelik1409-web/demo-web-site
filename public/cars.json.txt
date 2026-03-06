@@ -63,8 +63,7 @@
         "/cars/mercedes-e250-1.jpg",
         "/cars/mercedes-e250-2.jpg",
         "/cars/mercedes-e250-3.jpg",
-        "/cars/mercedes-e250-4.jpg",
-        "/cars/mercedes-e250-5.png"
+        "/cars/mercedes-e250-4.jpg"
       ],
       "description": "2015 Model Bayi Çıkışlı Mercedes-Benz E 250 CDI Edition. Hatasız, Boyasız, 4.000 TL Tramer. Panoramik Cam Tavan, Hafızalı/Isıtmalı Koltuklar, Tam Deri Bej İç Mekan. Çok temiz ve bakımlı.",
       "featured": true,
