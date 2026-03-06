@@ -108,5 +108,48 @@ export const vehicles: Vehicle[] = [
             '204 HP Motor Gücü',
             'Ekspertiz Garantili'
         ]
+    },
+    {
+        id: '10',
+        brand: 'BMW',
+        model: '520d Executive M Sport',
+        price: 3250000,
+        year: 2017,
+        mileage: 164000,
+        fuelType: 'Dizel',
+        transmission: 'Otomatik',
+        images: [
+            '/cars/bmw-520d/bmw-520d-1.png',
+            '/cars/bmw-520d/bmw-520d-2.png',
+            '/cars/bmw-520d/bmw-520d-3.png',
+            '/cars/bmw-520d/bmw-520d-4.png',
+            '/cars/bmw-520d/bmw-520d-5.png',
+            '/cars/bmw-520d/bmw-520d-6.png',
+            '/cars/bmw-520d/bmw-520d-7.png',
+            '/cars/bmw-520d/bmw-520d-8.png',
+            '/cars/bmw-520d/bmw-520d-9.png',
+            '/cars/bmw-520d/bmw-520d-10.png',
+            '/cars/bmw-520d/bmw-520d-11.png'
+        ],
+        category: 'Premium',
+        description: 'Aracım M Sport paket olup kozmetik ve mekanik olarak diri durumdadır. Motor–şanzıman kusursuz çalışmaktadır, yürüyeninde herhangi bir sorun yoktur. Şase podye airbag direklerde herhangi bi işlem yoktur. ORJİNAL M SPORT, NEXT 100, 4 KAPI VAKUM, ANTRASİT, HAYALET EKRAN. 2.0 B47 DİZEL oldukça sorunsuz ve az yakan bir motordur.',
+        features: [
+            'M Sport Paket',
+            'Executive Paket',
+            'Vakumlu Kapılar',
+            'Hayalet Ekran',
+            'Antrasit Tavan',
+            'Next 100',
+            'B47 Yeni Nesil Motor',
+            'M Sport Direksiyon',
+            'M Sport Koltuklar',
+            'Elektrikli Hafızalı Koltuklar',
+            'Isıtmalı Koltuklar',
+            'Sunroof',
+            'Geri Görüş Kamerası',
+            'Park Sensörleri',
+            'Hız Sabitleyici',
+            'Çift Bölge Dijital Klima'
+        ]
     }
 ];
