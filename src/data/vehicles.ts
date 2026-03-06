@@ -70,5 +70,44 @@ export const vehicles: Vehicle[] = [
             'Katlanır Aynalar',
             '4 Bölge Dijital Klima'
         ]
+    },
+    {
+        id: '9',
+        brand: 'Mercedes-Benz',
+        model: 'E 250 CDI Edition',
+        price: 3150000,
+        year: 2015,
+        mileage: 160000,
+        fuelType: 'Dizel',
+        transmission: 'Otomatik',
+        images: [
+            '/cars/mercedes-e250-1.jpg',
+            '/cars/mercedes-e250-2.jpg',
+            '/cars/mercedes-e250-3.jpg',
+            '/cars/mercedes-e250-4.jpg',
+            '/cars/mercedes-e250-5.png'
+        ],
+        category: 'Premium',
+        description: 'VİZYON OTOMOTİV güvencesiyle 2015 Model Mercedes-Benz E 250 CDI Edition. Bayi çıkışlı, hatasız ve boyasız. Sadece 4.000 TL tramer kaydı mevcuttur. İç kozmetiği ilk günkü temizliğini korumaktadır. Bakımlı ve masrafsız bir araçtır. Yedek anahtarları ve kitapçıkları mevcuttur.',
+        features: [
+            'Panoramik Cam Tavan',
+            'Sağ-Sol Koltuk Hafıza',
+            'Koltuk Isıtma',
+            'Geri Görüş Kamerası',
+            'Büyük Ekran',
+            'Tam Deri Bej Koltuklar',
+            'Çift Yönlü Bağımsız Dijital Klima',
+            'Elektrili Arka Perde',
+            'Yan Makam Perdeleri',
+            'Gündüz LED / Bi-Xenon',
+            'İç ve Dış Ambiyans Aydınlatma',
+            'Elektrikli Direksiyon',
+            'Elektrikli Katlanır Yan Aynalar',
+            'Cruise Control / Tempomat',
+            'Far-Park-Yağmur Sensörleri',
+            '4MATIC (4 Çeker)',
+            '204 HP Motor Gücü',
+            'Ekspertiz Garantili'
+        ]
     }
 ];
